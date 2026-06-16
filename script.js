@@ -7,15 +7,22 @@ button.addEventListener("click", function(event) {
     const newEntry = document.createElement("li");
     newEntry.textContent = (`${newItem}`);
     const removeItem = document.createElement("button");
+    const editItem = document.createElement("button");
     removeItem.textContent = ("Remove"); 
+    editItem.textContent = ("Edit");
     list.appendChild(newEntry);
     newEntry.appendChild(removeItem);
+    newEntry.appendChild(editItem);
     product.value = "";
+
+removeItem.addEventListener("click", function(event) {
+    newEntry.remove();
+})});
+
+/*editItem.addEventListener("click", fucntion(event) {
+  //  newEntry.textContent = (`${newItem}`);
 });
 
-button.removeEventListener("click", function(event) { 
-    newEntry.remove();
-});
 
  /*button.removeEventListener("click", function(event) {
     const newItem = product.value;
