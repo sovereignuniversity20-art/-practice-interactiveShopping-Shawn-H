@@ -1,27 +1,11 @@
-const product = document.getElementById("addProduct");
-const button = document.getElementById("myButton");
+const product = document.getElementById("addproduct");
 const list = document.getElementById("productlist");
-//const newItem = document.createElement(addproduct);
+const button = document.getElementById("addButton");
 
-//function newProduct(addproduct) {
-  //      list.push(addproduct);
-       // return list; 
-        //onsole.log(`You added: ${addproduct}`);
-    //}
+button.addEventListener("click", function(event) {
+    const newItem = product.value;
+    const newEntry = document.createElement("li");
+    newEntry.textContent = (`${newItem}`)
+    list.appendChild(newEntry);
+});
 
-list.addEventListener("input", () =>
-list.textContent = (`You added: ${addproduct}`)
-);
-
-document.forms.appendChild(product)
-
-//button.addEventListener('input', function(event) {
-  //      output.textContent = `You added: ${product}`;
-    //  });
-
-
-//button.addEventListener("click", handleClick);
-
-//button.addEventListener('click', () => {
-//addProduct();
-//})
