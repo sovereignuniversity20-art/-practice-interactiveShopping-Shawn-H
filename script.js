@@ -38,25 +38,4 @@ editItem.addEventListener("click", function(event) {
     }
 });    
 });
-//editItem.textContent = ("Save");
-    //newEntry.appendChild(editedItem);
-
-    //editItem.addEventListener("click", function(event)  {
-    //newInfo.textContent = editedItem.value; 
-    //editedItem.remove(); 
-    //editItem.textContent = ("Edit");  
- 
-/*editItem.addEventListener("click", fucntion(event) {
-  //  newEntry.textContent = (`${newItem}`);
-});
-
-
- /*button.removeEventListener("click", function(event) {
-    const newItem = product.value;
-    const newEntry = document.createElement("li");
-    newEntry.textContent = (`${newItem}`)
-    list.appendChild(newEntry);
-    product.value = "";
-    button.removeEventListener("click", handleClick);
-})*/
 
